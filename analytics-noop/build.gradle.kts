@@ -6,7 +6,9 @@ plugins {
 dependencies{
     implementation(project(":analytics-api"))
 }
-
+kotlin {
+    jvmToolchain(17)
+}
 publishing {
     publications {
         create<MavenPublication>("release") {

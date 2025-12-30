@@ -21,8 +21,7 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
         }
     }
@@ -36,6 +35,9 @@ dependencies {
     implementation(project(":analytics-store"))
     implementation(project(":analytics-api"))
     compileOnly(libs.androidx.work.runtime.ktx)
+}
+kotlin {
+    jvmToolchain(17)
 }
 publishing {
     publications {

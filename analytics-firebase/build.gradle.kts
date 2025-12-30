@@ -32,7 +32,9 @@ android {
         }
     }
 }
-
+kotlin {
+    jvmToolchain(17)
+}
 dependencies {
     compileOnly("com.google.firebase:firebase-analytics-ktx:22.5.0")
     implementation(project(":analytics-api"))

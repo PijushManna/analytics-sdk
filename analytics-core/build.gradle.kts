@@ -9,6 +9,9 @@ dependencies {
     //noinspection UseTomlInstead
     compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
 }
+kotlin {
+    jvmToolchain(17)
+}
 
 publishing {
     publications {

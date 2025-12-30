@@ -32,6 +32,9 @@ android {
         }
     }
 }
+kotlin {
+    jvmToolchain(17)
+}
 dependencies {
     implementation(project(":analytics-api"))
     compileOnly("com.google.code.gson:gson:2.13.2")
