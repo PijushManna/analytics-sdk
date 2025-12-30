@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.analytics.firebase"
+    namespace = "com.analytics.bom"
     compileSdk {
         version = release(36)
     }
@@ -13,7 +13,7 @@ android {
     defaultConfig {
         minSdk = 24
 
-        testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
 
@@ -26,6 +26,7 @@ android {
             )
         }
     }
+
     publishing {
         singleVariant("release") {
             withSourcesJar()
@@ -34,9 +35,15 @@ android {
 }
 
 dependencies {
-    compileOnly("com.google.firebase:firebase-analytics-ktx:22.5.0")
     implementation(project(":analytics-api"))
+    implementation(project(":analytics-core"))
+    implementation(project(":analytics-store"))
+    implementation(project(":analytics-worker"))
+    implementation(project(":analytics-firebase"))
+    implementation("io.insert-koin:koin-android:4.1.1")
+    implementation("io.insert-koin:koin-androidx-workmanager:4.1.1")
 }
+
 
 publishing {
     publications {

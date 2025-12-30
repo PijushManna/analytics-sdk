@@ -6,6 +6,8 @@ plugins {
 
 dependencies {
     implementation(project(":analytics-api"))
+    //noinspection UseTomlInstead
+    compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
 }
 
 publishing {

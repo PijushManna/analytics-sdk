@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.analytics.analytics_worker"
+    namespace = "com.analytics.worker"
     compileSdk {
         version = release(36)
     }
@@ -31,6 +31,11 @@ android {
             withSourcesJar()
         }
     }
+}
+dependencies {
+    implementation(project(":analytics-store"))
+    implementation(project(":analytics-api"))
+    compileOnly(libs.androidx.work.runtime.ktx)
 }
 publishing {
     publications {
