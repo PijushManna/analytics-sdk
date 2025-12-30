@@ -40,8 +40,8 @@ dependencies {
     implementation(project(":analytics-store"))
     implementation(project(":analytics-worker"))
     implementation(project(":analytics-firebase"))
-    implementation("io.insert-koin:koin-android:4.1.1")
-    implementation("io.insert-koin:koin-androidx-workmanager:4.1.1")
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.workmanager)
 }
 
 

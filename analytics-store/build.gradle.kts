@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.analytics.store"
-    compileSdk {
+    compileSdk { 
         version = release(36)
     }
 
@@ -37,8 +37,8 @@ kotlin {
 }
 dependencies {
     implementation(project(":analytics-api"))
-    compileOnly("com.google.code.gson:gson:2.13.2")
-    compileOnly("androidx.room:room-runtime:2.8.4")
+    compileOnly(libs.gson)
+    compileOnly(libs.androidx.room.runtime)
 
     // Kotlin extensions + Coroutines support
 //    implementation("androidx.room:room-ktx:2.8.4")

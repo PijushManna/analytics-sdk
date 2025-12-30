@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.analytics.firebase"
-    compileSdk {
+    compileSdk { 
         version = release(36)
     }
 
@@ -36,7 +36,7 @@ kotlin {
     jvmToolchain(17)
 }
 dependencies {
-    compileOnly("com.google.firebase:firebase-analytics-ktx:22.5.0")
+    compileOnly(libs.firebase.analytics.ktx)
     implementation(project(":analytics-api"))
 }
 
