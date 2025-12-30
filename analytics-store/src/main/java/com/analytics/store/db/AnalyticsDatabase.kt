@@ -30,7 +30,6 @@ abstract class AnalyticsDatabase : RoomDatabase() {
                     AnalyticsDatabase::class.java,
                     DB_NAME
                 )
-                    .fallbackToDestructiveMigration()
                     .build()
                     .also { INSTANCE = it }
             }
