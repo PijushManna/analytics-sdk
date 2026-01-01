@@ -5,7 +5,7 @@ plugins {
 
 
 dependencies {
-    implementation(project(":analytics-api"))
+    api(project(":analytics-api"))
     compileOnly(libs.kotlinx.coroutines.core)
 }
 kotlin {

@@ -3,16 +3,19 @@ package com.analytics.worker
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.analytics.api.EventStore
+import com.analytics.core.EventTrackerFactory
 
-class AnalyticsWorker(
+internal class AnalyticsWorker(
     ctx: Context,
     params: WorkerParameters,
-    private val store: EventStore
 ) : CoroutineWorker(ctx, params) {
 
     override suspend fun doWork(): Result {
-        store.flush()
-        return Result.success()
+        return try {
+            EventTrackerFactory.uploadNow()
+            Result.success()
+        } catch (e: Exception) {
+            Result.retry()
+        }
     }
 }

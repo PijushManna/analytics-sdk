@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
     id("maven-publish")
 }
 
@@ -34,7 +35,12 @@ android {
 dependencies {
     implementation(project(":analytics-store"))
     implementation(project(":analytics-api"))
-    compileOnly(libs.androidx.work.runtime.ktx)
+    implementation(project(":analytics-core"))
+    implementation(libs.androidx.work.runtime.ktx)
+    implementation(libs.androidx.hilt.work)
+    kapt(libs.androidx.hilt.compiler)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
 }
 kotlin {
     jvmToolchain(17)

@@ -1,4 +1,4 @@
-package com.analytics.core
+package com.analytics.api
 
 /**
  * @param [batchSize] default value = 10
@@ -7,4 +7,5 @@ package com.analytics.core
 data class AnalyticsConfig(
     val batchSize: Int = 10,
     val flushIntervalMs: Long = 15_000,
+    val isDebugMode: Boolean = false,
 )
