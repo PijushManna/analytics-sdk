@@ -6,8 +6,8 @@ plugins {
 }
 
 allprojects {
-    group = "com.github.codew1997"
-    version = "1.0.4"
+    group = "com.github.pijushmanna.analytics-sdk"
+    version = "1.0.0"
 }
 
 subprojects {
