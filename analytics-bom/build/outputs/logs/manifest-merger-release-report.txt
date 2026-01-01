@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/pijushmanna/StudioProjects/analytics-sdk/analytics-bom/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest11909577344386992721.xml:2:13-83
+INJECTED from /Users/pijushmanna/StudioProjects/analytics-sdk/analytics-bom/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest11909577344386992721.xml:2:13-83
+	package
+		INJECTED from /Users/pijushmanna/StudioProjects/analytics-sdk/analytics-bom/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest11909577344386992721.xml
+	xmlns:android
+		ADDED from /Users/pijushmanna/StudioProjects/analytics-sdk/analytics-bom/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest11909577344386992721.xml:2:23-81
+uses-sdk
+INJECTED from /Users/pijushmanna/StudioProjects/analytics-sdk/analytics-bom/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest11909577344386992721.xml reason: use-sdk injection requested
+INJECTED from /Users/pijushmanna/StudioProjects/analytics-sdk/analytics-bom/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest11909577344386992721.xml
+INJECTED from /Users/pijushmanna/StudioProjects/analytics-sdk/analytics-bom/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest11909577344386992721.xml
+	android:targetSdkVersion
+		INJECTED from /Users/pijushmanna/StudioProjects/analytics-sdk/analytics-bom/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest11909577344386992721.xml
+	android:minSdkVersion
+		INJECTED from /Users/pijushmanna/StudioProjects/analytics-sdk/analytics-bom/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest11909577344386992721.xml

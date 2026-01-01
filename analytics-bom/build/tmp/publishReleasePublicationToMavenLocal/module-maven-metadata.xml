@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.pijushmanna.analytics-sdk</groupId>
+  <artifactId>analytics-bom</artifactId>
+  <versioning>
+    <latest>1.0.0</latest>
+    <release>1.0.0</release>
+    <versions>
+      <version>1.0.0</version>
+    </versions>
+    <lastUpdated>20260101082030</lastUpdated>
+  </versioning>
+</metadata>

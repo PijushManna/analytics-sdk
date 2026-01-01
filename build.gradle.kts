@@ -7,7 +7,9 @@ plugins {
 
 allprojects {
     group = "com.github.pijushmanna.analytics-sdk"
-    version = "1.0.0"
+//    version = "1.0.0"
+    version = System.getenv("RELEASE_VERSION")
+        ?: file("${rootDir}/version.txt").readText().trim()
 }
 
 subprojects {

@@ -33,7 +33,9 @@ android {
         }
     }
 }
-
+kotlin {
+    jvmToolchain(17)
+}
 dependencies {
     api(project(":analytics-api"))
     api(project(":analytics-core"))
