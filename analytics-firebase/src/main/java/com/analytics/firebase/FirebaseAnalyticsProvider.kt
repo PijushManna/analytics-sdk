@@ -1,7 +1,6 @@
 package com.analytics.firebase
 
 import android.content.Context
-import android.os.Bundle
 import com.analytics.api.AnalyticsEvent
 import com.analytics.api.AnalyticsProvider
 import com.google.firebase.analytics.FirebaseAnalytics
@@ -18,10 +17,4 @@ class FirebaseAnalyticsProvider(
     }
 }
 
-fun Map<String, String>.toBundle(): Bundle {
-    val bundle = Bundle()
-    forEach { (key, value) ->
-        bundle.putString(key, value)
-    }
-    return bundle
-}
+

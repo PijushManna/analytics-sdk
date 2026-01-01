@@ -74,4 +74,6 @@ object EventTrackerFactory : EventTracker {
         get() = config.isDebugMode
     val uploadInterval:Long
         get() = config.flushIntervalMs
+    val appVersion:String
+        get() = config.appVersion
 }

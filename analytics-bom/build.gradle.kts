@@ -35,13 +35,11 @@ android {
 }
 
 dependencies {
-    implementation(project(":analytics-api"))
-    implementation(project(":analytics-core"))
-    implementation(project(":analytics-store"))
-    implementation(project(":analytics-worker"))
-    implementation(project(":analytics-firebase"))
-    implementation(libs.koin.android)
-    implementation(libs.koin.androidx.workmanager)
+    api(project(":analytics-api"))
+    api(project(":analytics-core"))
+    api(project(":analytics-store"))
+    api(project(":analytics-worker"))
+    api(project(":analytics-firebase"))
 }
 
 

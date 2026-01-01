@@ -17,13 +17,6 @@ pluginManagement {
         id("com.android.library") version "8.13.2"
     }
 }
-//dependencyResolutionManagement {
-//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-//    repositories {
-//        google()
-//        mavenCentral()
-//    }
-//}
 
 rootProject.name = "analytics-sdk"
 
@@ -33,3 +26,4 @@ include(":analytics-store")
 include(":analytics-worker")
 include(":analytics-firebase")
 include(":analytics-noop")
+include(":analytics-bom")
